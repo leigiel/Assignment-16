@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        padding: 50px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Hurrah! I have used DOM manipulation.</h1>
+    <label for="text">:</label>
+    <input onchange="ghotbe(this)" type="text" name="" id="text">
+    
+    <script>
+        function ghotbe(hi){
+
+        // console.log(hi.value)
+
+        const output = hi.value.toUpperCase()
+      console.log(output)
+        } -->
+
+    <h1>Hurrah! I have used DOM manipulation.</h1>
+
+    <p
+      id="para"
+      onmouseover="mouseover()"
+      onmouseout="mouseout()"
+      onmousedown="mousedown()"
+      onmouseup="mouseup()"
+    >
+      Mouse Over Out Up Down
+    </p>
+    <p
+      id="para2"
+      onmouseenter="mouseenter()"
+      onmouseleave="mouseleave()"
+      ondblclick="mousedoubleclick()"
+    >
+      Mouse Enter Leave DoubleClick
+    </p>
+
+    <p id="para3" onmousemove="mousemove()" onmousewheel="mousewheel()">
+      Mouse Move Wheel
+    </p>
+
+    <label for="text">[Key (Down UP)] Focus Blur</label>
+    <input
+      type="text"
+      name=""
+      id="text"
+      onkeydown="keydown()"
+      onkeyup="keyup()"
+      onfocus="itsfocused()"
+      onblur="itsblurred()"
+    />
+   
+    <script>
+      function mouseover() {
+        // console.log('mouseover hocche')
+
+        const para = document.getElementById("para");
+        para.innerText = "Mouse OVER hocche ekhon";
+      }
+      function mouseout() {
+        const para = document.getElementById("para");
+        para.innerText = "Mouse OUT hocche ekhon";
+      }
+      function mousedown() {
+        const para = document.getElementById("para");
+        para.innerText = "Mouse DOWN hocche ekhon";
+      }
+      function mouseup() {
+        const para = document.getElementById("para");
+        para.innerText = "Mouse UP hocche ekhon";
+      }
+
+      function mouseenter() {
+        const para = document.getElementById("para2");
+        para.innerText = "Mouse ENTER hocche ekhon";
+      }
+      function mouseleave() {
+        const para = document.getElementById("para2");
+        para.innerText = "Mouse LEAVE hocche ekhon";
+      }
+      function mousedoubleclick() {
+        const para = document.getElementById("para2");
+        para.innerText = "Mouse DOUBLE CLICK hocche ekhon";
+      }
+      function mousemove() {
+        const para = document.getElementById("para3");
+        para.innerText = "Mouse MOVE hocche ekhon";
+      }
+      function mousewheel() {
+        const para = document.getElementById("para3");
+        para.innerText = "Mouse WHEEL hocche ekhon";
+      }
+      function keydown() {
+        const text = document.getElementById("text");
+        text.style.backgroundColor = "red";
+      }
+      function keyup() {
+        const text = document.getElementById("text");
+        text.style.backgroundColor = "green";
+      } 
+      function itsfocused() {
+        const text = document.getElementById("text");
+        text.style.backgroundColor = "yellow";
+      }
+      function itsblurred() {
+        const text = document.getElementById("text");
+        text.style.backgroundColor = "pink";
+      }
+
+
+
+    </script>
+  </body>
+</html>
